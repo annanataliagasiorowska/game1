@@ -4,8 +4,8 @@ import random
 computer_wins = 0
 player_wins = 0
 games = 0
-
-while True:
+play = 'yes'
+while play == 'yes':
     play = input('Do you want to play the game? Type yes or no. ').lower()
     if play == 'yes':
         games +=1
@@ -23,10 +23,4 @@ while True:
             print('You chose the same. No winner in this round!')  
         
 
-    else:
-        break
-
-
 print('Game is over. You won', player_wins, 'times out of', games,'.')
-
-
